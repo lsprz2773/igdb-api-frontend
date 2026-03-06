@@ -2,7 +2,7 @@
 
 ## Tecnologías
 
-- **Next.js 15** — App Router, Server Components, Route Handlers
+- **Next.js** — App Router, Server Components, Route Handlers
 - **TypeScript** — Tipado estático
 - **Tailwind CSS** — Estilos web
 - **IGDB API** — Base de datos de videojuegos
