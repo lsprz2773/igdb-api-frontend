@@ -27,7 +27,7 @@ export default function Pagination({ currentPage }: PaginationProps) {
             <button
                 onClick={() => goToPage(currentPage - 1)}
                 disabled={currentPage <= 1 || isPending}
-                className="px-4 py-2 rounded-xl bg-white/10 text-white hover:bg-white/20 disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+                className="px-4 py-2 rounded-xl bg-white/10 text-white hover:bg-white/20 disabled:opacity-30 disabled:cursor-not-allowed transition-all hover:cursor-pointer"
             >
                 Anterior
             </button>
@@ -35,7 +35,7 @@ export default function Pagination({ currentPage }: PaginationProps) {
             <button
                 onClick={() => goToPage(currentPage + 1)}
                 disabled={isPending}
-                className="px-4 py-2 rounded-xl bg-white/10 text-white hover:bg-white/20 disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+                className="px-4 py-2 rounded-xl bg-white/10 text-white hover:bg-white/20 disabled:opacity-30 disabled:cursor-not-allowed transition-all hover:cursor-pointer"
             >
                 Siguiente
             </button>
