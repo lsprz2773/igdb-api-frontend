@@ -23,7 +23,7 @@ export default function GameCard({
     const rating = total_rating ? Math.round(total_rating) : null;
 
     return (
-        <div className="w-full max-w-lg flex flex-row bg-[rgb(19,20,25)] rounded-2xl border border-white/10 p-3 gap-4 items-stretch hover:border-white/30 hover:bg-[rgb(25,27,33)] transition-all duration-200 cursor-pointer">
+        <div className="w-full max-w-lg flex flex-row bg-[rgb(19,20,25)] rounded-2xl border border-white/10 p-3 gap-4 items-stretch hover:border-white/30 hover:bg-[rgb(25,27,33)] transition-all duration-200">
 
             <div className="flex-shrink-0">
                 {cover ? (

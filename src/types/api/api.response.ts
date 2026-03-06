@@ -109,3 +109,18 @@ export interface IGDBGame {
     game_status?: number;
 }
 
+export interface IGDBGameExpanded extends Omit<IGDBGame,
+    "cover" | "genres" | "platforms" | "game_modes" |
+    "themes" | "screenshots" | "websites" | "release_dates" |
+    "involved_companies"> {
+    cover?: IGDBCover;
+    genres?: IGDBGenre[];
+    platforms?: IGDBPlatform[];
+    game_modes?: IGDBGameMode[];
+    themes?: IGDBTheme[];
+    screenshots?: IGDBScreenshot[];
+    websites?: IGDBWebsite[];
+    release_dates?: IGDBReleaseDate[];
+    involved_companies?: IGDBInvolvedCompany[];
+}
+

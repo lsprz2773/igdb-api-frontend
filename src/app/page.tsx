@@ -1,11 +1,13 @@
-import GameCard from "@/components/game-card/game.card";
+import { getGames } from "@/services/igdb.service";
+import GameGrid from "@/components/game-grid/game.grid";
 
-export default function Home() {
-  return (
-    <div className=" bg-black h-screen w-screen p-10">
-        <div className="w-full h-full flex flex-col items-center justify-center">
-            <GameCard></GameCard>
-        </div>
-    </div>
-  );
+export default async function HomePage() {
+    const games = await getGames();
+
+    return (
+        <main className="p-8">
+            <h1 className="text-2xl font-bold text-white mb-6">Juegos</h1>
+            <GameGrid games={games} />
+        </main>
+    );
 }
